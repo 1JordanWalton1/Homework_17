@@ -1,0 +1,329 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+
+
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+._container {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+[class*="__container"] {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Header */
+
+.header {}
+
+.header__title {
+    background-color: #f45;
+
+    padding: 15px;
+}
+
+/* Logoipsum */
+
+.logoipsum {
+    background: url('../img/logoipsum/background.png') no-repeat 0 0/cover;
+}
+
+.logoipsum__container {}
+
+.logoipsum__items {
+    display: flex;
+}
+
+.logoipsum__up {
+    display: flex;
+
+}
+
+.logoipsum__up:not(:last-child) {
+    margin: 0 0 30px 0;
+}
+
+.logoipsum__logo {
+    display: flex;
+    align-items: center;
+    flex: 1 1 174px;
+    column-gap: 11px;
+}
+
+.logoipsum__logo img {}
+
+.logoipsum__logo-text {}
+
+.logoipsum__elements {
+    display: flex;
+
+    margin: 0 -15px;
+}
+
+.logoipsum__clock {
+    padding: 0 15px;
+}
+
+.logoipsum__description {
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 22px;
+    letter-spacing: 0.15px;
+    color: #FFF;
+
+    padding-left: 34px;
+
+    background: url('../img/logoipsum/01.svg') no-repeat;
+}
+
+.logoipsum__description_background {
+    background: url('../img/logoipsum/02.svg') no-repeat;
+}
+
+.logoipsum__tel {
+    padding: 0 15px;
+}
+
+.logoipsum__button {
+    padding: 0 15px 0 15px;
+}
+
+.button {
+    display: flex;
+
+}
+
+.button__item {
+    background-color: #F2726F;
+
+    border: none;
+    border-radius: 8px;
+
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    color: #FFf;
+
+    padding: 0 30px 0 30px;
+
+    transition: background-color 0.2s linear;
+
+    flex: 1 1 211px;
+}
+
+.button__item:hover {
+    background-color: #dd413e;
+
+    cursor: pointer;
+}
+
+.logoipsum__burger {
+    background: #FFF;
+    border-radius: 10px;
+}
+
+.logoipsum__burger:not(:last-child) {
+    margin: 0 0 80px 0;
+}
+
+.logoipsum__options {
+    display: flex;
+
+    padding: 20px 48px 20px 40px;
+
+}
+
+.logoipsum__vars {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+
+    margin: 0 -19px;
+}
+
+.logoipsum__option {
+    padding: 0 19px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.15px;
+    color: #000;
+}
+
+.logoipsum__option a {
+    text-decoration: none;
+    color: #000;
+}
+
+.logoipsum__option a:hover {
+    text-decoration: underline;
+}
+
+.logoipsum__option_pseudo {
+    display: flex;
+    align-items: center;
+    column-gap: 1px;
+}
+
+.logoipsum__option_pseudo::after {
+    content: "";
+    display: inline-block;
+    background: url('../img/logoipsum/arrow.svg') no-repeat 0 0/16px 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.logoipsum__icons {
+    display: flex;
+
+    margin: 0 -11px;
+}
+
+.logoipsum__icon {
+    padding: 0 11px;
+}
+
+/* Адаптив */
+
+@media (max-width:1050px) {
+    .logoipsum__container {
+        max-width: 970px;
+    }
+}
+
+@media (max-width:992px) {
+    .logoipsum__container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width:767px) {
+    .logoipsum__container {
+        max-width: none;
+    }
+
+
+}
+
+@media (max-width:748px) {
+    .logoipsum__vars {
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media (max-width:530px) {
+    .logoipsum__up {
+        display: block;
+    }
+
+    .logoipsum__logo {
+        margin: 0 0 20px 0;
+    }
+
+}
+
+@media (max-width:574px) {
+    .button__item {
+        font-size: 0.5rem;
+    }
+
+    .logoipsum__burger:not(:last-child) {
+        margin: 0 0 40px 0;
+    }
+
+}
+
+@media (max-width:450px) {
+    .logoipsum__elements {
+        display: block;
+    }
+
+    .logoipsum__clock {
+        margin-bottom: 10px;
+    }
+
+    .logoipsum__tel {
+        margin-bottom: 10px;
+    }
+
+    .logoipsum__button {
+        margin-bottom: 10px;
+    }
+}
+
+/* flex: 0 1 150px; */
+
+@media (max-width:378px) {
+    .button__item {
+        padding: 0 10px 0 10px;
+    }
+
+    .logoipsum__vars {
+        /* flex: 0 1 150px; */
+    }
+}
+
+
+@media (max-width:320px) {
+    .logoipsum__vars {
+        flex: 0 1 150px;
+    }
+}
+
+
+
+/* Footer */
+
+.footer {}
+
+.footer__title {
+    padding: 15px;
+    background-color: #38c700;
+
+}
